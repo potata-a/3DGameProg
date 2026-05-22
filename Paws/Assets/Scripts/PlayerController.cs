@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
         Vector3 movementVelocity = moveDirection;
         playerRigidBody.velocity = movementVelocity;
     }
+    
     private void HandleRotation(){
         Vector3 targetDirection = Vector3.zero;
 
