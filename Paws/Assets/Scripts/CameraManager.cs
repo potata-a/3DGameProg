@@ -17,23 +17,39 @@ public class CameraManager : MonoBehaviour
     public float lookAngle;
     public float pivotAngle;
 
-    private void Awake(){
+    private void Awake()
+    {
         inputManager = FindObjectOfType<InputManager>();
         targetTransform = FindObjectOfType<PlayerManager>().transform;
     }
 
-    public void HandleAllCameraMovement(){
+    private void Start()
+    {
+        // Lock and hide the PC mouse pointer so the player can control the camera properly.
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    public void HandleAllCameraMovement()
+    {
         FollowTarget();
         RotateCamera();
     }
 
-    private void FollowTarget(){
-        Vector3 targetPosition = Vector3.SmoothDamp(transform.position, targetTransform.position, ref cameraFollowVelocity, cameraFollowSpeed);
+    private void FollowTarget()
+    {
+        Vector3 targetPosition = Vector3.SmoothDamp(
+            transform.position,
+            targetTransform.position,
+            ref cameraFollowVelocity,
+            cameraFollowSpeed
+        );
 
         transform.position = targetPosition;
     }
 
-    private void RotateCamera(){
+    private void RotateCamera()
+    {
         lookAngle = lookAngle + (inputManager.cameraInputX * cameraLookSpeed);
         pivotAngle = pivotAngle - (inputManager.cameraInputY * cameraPivotSpeed);
         pivotAngle = Mathf.Clamp(pivotAngle, -35, 35);
@@ -49,7 +65,18 @@ public class CameraManager : MonoBehaviour
         cameraPivot.localRotation = targetRotation;
     }
 
-    private void HandleCameraCollisions(){
+    private void HandleCameraCollisions()
+    {
 
+    }
+
+    private void OnApplicationFocus(bool hasFocus)
+    {
+        // If player clicks back into the game window, lock and hide the cursor again.
+        if (hasFocus)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
 }
