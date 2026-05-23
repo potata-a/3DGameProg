@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 public class InputManager : MonoBehaviour
 {
     PlayerControls playerControls;
+    AnimatorManager animatorManager;
+    PlayerController playerController;
 
     public Vector2 movementInput;
     public Vector2 cameraInput;
@@ -13,9 +15,17 @@ public class InputManager : MonoBehaviour
     public float cameraInputX;
     public float cameraInputY;
 
-    private float moveAmount;
+    public float moveAmount;
     public float verticalInput;
     public float horizontalInput;
+
+    public bool sprintInput;
+    public bool jumpInput;
+
+    public void Awake(){
+        animatorManager = GetComponent<AnimatorManager>();
+        playerController = GetComponent<PlayerController>();
+    }
 
     private void OnEnable(){
         if (playerControls == null){
@@ -23,6 +33,10 @@ public class InputManager : MonoBehaviour
 
             playerControls.PlayerMovement.Movement.performed += i => movementInput = i.ReadValue<Vector2>();
             playerControls.PlayerMovement.Camera.performed += i => cameraInput = i.ReadValue<Vector2>();
+
+            playerControls.PlayerActions.Sprint.performed += i => sprintInput = true;
+            playerControls.PlayerActions.Sprint.canceled += i => sprintInput = false;
+            playerControls.PlayerActions.Jump.performed += i => jumpInput = true;
         }
         playerControls.Enable();
     }
@@ -33,6 +47,8 @@ public class InputManager : MonoBehaviour
 
     public void HandleAllInputs(){
         HandleMovementInput();
+        HandleSprintingInput();
+        HandleJumpingInput();
     }
 
     private void HandleMovementInput(){
@@ -41,5 +57,24 @@ public class InputManager : MonoBehaviour
 
         cameraInputX = cameraInput.x;
         cameraInputY = cameraInput.y;
+
+        moveAmount = Mathf.Clamp01(Mathf.Abs(horizontalInput) + Mathf.Abs(verticalInput));
+        animatorManager.UpdateAnimatorValues(0, moveAmount, playerController.isSprinting);
+    }
+
+    private void HandleSprintingInput(){
+        if (sprintInput && moveAmount > 0.5f){
+            playerController.isSprinting = true;
+        }
+        else{
+            playerController.isSprinting = false;
+        }
+    }
+
+    private void HandleJumpingInput(){
+        if (jumpInput){
+            jumpInput = false;
+            playerController.HandleJumping();
+        }
     }
 }

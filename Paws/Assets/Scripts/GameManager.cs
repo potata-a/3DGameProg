@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Player Stats")]
     [SerializeField] private int playerHealth = 3;
-    [SerializeField] private int fishTarget = 5;
+    [SerializeField] private int fishTarget = 10;
     [SerializeField] private float timeLimit = 600f;
 
     [Header("References")]
