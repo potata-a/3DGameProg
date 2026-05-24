@@ -48,7 +48,7 @@ public class CollectableFish : MonoBehaviour
 
         if (GameManager.Instance != null)
         {
-            GameManager.Instance.AddFish();
+            GameManager.Instance.AddBurger();
         }
 
         gameObject.SetActive(false);
