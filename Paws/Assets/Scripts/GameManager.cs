@@ -1,6 +1,6 @@
 /*
 Author: Muqrie Rahimi
-Student ID: YOUR_STUDENT_ID
+Student ID: 1211109977
 Date Created: 23 May 2026
 */
 
@@ -30,11 +30,13 @@ public class GameManager : MonoBehaviour
     private int burgerCollected = 0;
     private float currentTime;
     private bool gameEnded = false;
+    private bool isPaused = false;
     private string endMessage = "";
 
     public int BurgerCollected => burgerCollected;
     public int BurgerTarget => burgerTarget;
     public int PlayerHealth => playerHealth;
+    public bool IsPaused => isPaused;
 
     private void Awake()
     {
@@ -63,15 +65,68 @@ public class GameManager : MonoBehaviour
             interactionText.gameObject.SetActive(false);
         }
 
+        LockCursor();
+
         Debug.Log("Game started. Student IDs: Ahmad Aliff - 1221309548, Muqrie Rahimi - 1211109977");
     }
 
     private void Update()
     {
-        if (gameEnded) return;
+        HandlePauseInput();
+
+        if (gameEnded || isPaused) return;
 
         UpdateTimer();
         HandleRaycastInteraction();
+    }
+
+    private void HandlePauseInput()
+    {
+        if (gameEnded) return;
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isPaused)
+            {
+                ResumeGame();
+            }
+            else
+            {
+                PauseGame();
+            }
+        }
+    }
+
+    private void PauseGame()
+    {
+        isPaused = true;
+        Time.timeScale = 0f;
+
+        if (interactionText != null)
+        {
+            interactionText.gameObject.SetActive(false);
+        }
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        Debug.Log("Game Paused");
+    }
+
+    private void ResumeGame()
+    {
+        isPaused = false;
+        Time.timeScale = 1f;
+
+        LockCursor();
+
+        Debug.Log("Game Resumed");
+    }
+
+    private void LockCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private void UpdateTimer()
@@ -125,7 +180,7 @@ public class GameManager : MonoBehaviour
 
     public void AddBurger()
     {
-        if (gameEnded) return;
+        if (gameEnded || isPaused) return;
 
         burgerCollected++;
         Debug.Log("Burger collected: " + burgerCollected + "/" + burgerTarget);
@@ -133,7 +188,7 @@ public class GameManager : MonoBehaviour
 
     public void DamagePlayer(int amount)
     {
-        if (gameEnded) return;
+        if (gameEnded || isPaused) return;
 
         playerHealth -= amount;
         Debug.Log("Player damaged. HP left: " + playerHealth);
@@ -152,7 +207,7 @@ public class GameManager : MonoBehaviour
 
     public void TryWinGame()
     {
-        if (gameEnded) return;
+        if (gameEnded || isPaused) return;
 
         if (HasEnoughBurger())
         {
@@ -175,6 +230,10 @@ public class GameManager : MonoBehaviour
         }
 
         Time.timeScale = 0f;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         Debug.Log(endMessage);
     }
 
@@ -189,16 +248,26 @@ public class GameManager : MonoBehaviour
         }
 
         Time.timeScale = 0f;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         Debug.Log(endMessage);
     }
 
     private void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 300, 30), "Ahmad Aliff 1221309548 ");
-        GUI.Label(new Rect(10, 35, 300, 30), "Muqrie Rahimi 1211109977 ");
+        GUI.Label(new Rect(10, 10, 300, 30), "Ahmad Aliff 1221309548");
+        GUI.Label(new Rect(10, 35, 300, 30), "Muqrie Rahimi 1211109977");
         GUI.Label(new Rect(10, 65, 300, 30), "Burger: " + burgerCollected + "/" + burgerTarget);
         GUI.Label(new Rect(10, 90, 300, 30), "Health: " + playerHealth);
         GUI.Label(new Rect(10, 115, 300, 30), "Time: " + Mathf.CeilToInt(currentTime));
+
+        if (isPaused && !gameEnded)
+        {
+            GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 25, 250, 40), "PAUSED");
+            GUI.Label(new Rect(Screen.width / 2 - 140, Screen.height / 2 + 5, 350, 40), "Press ESC to resume");
+        }
 
         if (gameEnded)
         {

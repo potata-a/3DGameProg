@@ -5946,6 +5946,8 @@ MonoBehaviour:
   leapingVelocity: 3
   fallingVelocity: 25
   rayCastHeightOffSet: 0.25
+  groundCheckDistance: 0.6
+  groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -20891,6 +20893,8 @@ MonoBehaviour:
   leapingVelocity: 3
   fallingVelocity: 25
   rayCastHeightOffSet: 0.2
+  groundCheckDistance: 0.6
+  groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -20971,7 +20975,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.22
-  m_Center: {x: 0, y: 0.22, z: 0}
+  m_Center: {x: 0, y: 0.2, z: 0}
 --- !u!1 &4615840574472803158
 GameObject:
   m_ObjectHideFlags: 0
