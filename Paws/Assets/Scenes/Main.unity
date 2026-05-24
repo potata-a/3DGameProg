@@ -871,7 +871,7 @@ Transform:
   m_GameObject: {fileID: 86910121}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -52, y: 1.8, z: -0.5}
+  m_LocalPosition: {x: -60, y: 1.8, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2668,7 +2668,7 @@ Transform:
   m_GameObject: {fileID: 277160671}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 75, y: 1.8, z: -11.5}
+  m_LocalPosition: {x: 110, y: 1.8, z: -11.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3554,7 +3554,7 @@ Transform:
   m_GameObject: {fileID: 396163611}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -55, y: 1.8, z: -35.5}
+  m_LocalPosition: {x: -60, y: 1.8, z: -35.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3909,7 +3909,7 @@ Transform:
   m_GameObject: {fileID: 444933720}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 75, y: 1.8, z: -24.5}
+  m_LocalPosition: {x: 110, y: 1.8, z: -24.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4510,7 +4510,7 @@ Transform:
   m_GameObject: {fileID: 543146153}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -55, y: 1.8, z: -24.5}
+  m_LocalPosition: {x: -60, y: 1.8, z: -24.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5700,7 +5700,7 @@ Transform:
   m_GameObject: {fileID: 655937424}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 75, y: 1.8, z: -35.5}
+  m_LocalPosition: {x: 110, y: 1.8, z: -35.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9128,7 +9128,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 825299331}
   endPoint: {fileID: 543146154}
   carSpeed: 25
-  spawnCooldown: 2
+  spawnCooldown: 3
   damageAmount: 1
   carHitClip: {fileID: 8300000, guid: de4971cd6fd84f344b1d49cb41e3b824, type: 3}
 --- !u!114 &1018852195
@@ -14067,8 +14067,8 @@ MonoBehaviour:
   carPrefab: {fileID: 4295404176080237652, guid: 18a4a4424ac4a1d46ac4a8b00265c921, type: 3}
   spawnPoint: {fileID: 444933721}
   endPoint: {fileID: 1427801513}
-  carSpeed: 25
-  spawnCooldown: 2
+  carSpeed: 20
+  spawnCooldown: 3
   damageAmount: 1
   carHitClip: {fileID: 8300000, guid: de4971cd6fd84f344b1d49cb41e3b824, type: 3}
 --- !u!4 &1449149193 stripped
@@ -16381,7 +16381,7 @@ Transform:
   m_GameObject: {fileID: 1647202779}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -52, y: 1.8, z: -11.5}
+  m_LocalPosition: {x: -60, y: 1.8, z: -11.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19854,7 +19854,7 @@ Transform:
   m_GameObject: {fileID: 1926999176}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 75, y: 1.8, z: -0.5}
+  m_LocalPosition: {x: 110, y: 1.8, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22554,7 +22554,7 @@ MonoBehaviour:
   isJumping: 0
   walkingSpeed: 1
   runningSpeed: 1.5
-  sprintingSpeed: 4
+  sprintingSpeed: 5
   rotationSpeed: 15
   jumpHeight: 1
   gravityIntensify: -15

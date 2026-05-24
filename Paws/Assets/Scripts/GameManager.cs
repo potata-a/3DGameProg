@@ -287,11 +287,8 @@ public class GameManager : MonoBehaviour
             normal = { textColor = Color.white }
         };
 
-        GUI.Label(
-            new Rect(Screen.width / 2 - 250, 10, 500, 50),
-            "MISSION: Find all 15 burgers",
-            missionStyle
-        );
+        GUI.Label(new Rect(Screen.width / 2 - 250, 10, 500, 50), "MISSION: Find all 15 burgers", missionStyle);
+        GUI.Label(new Rect(Screen.width / 2 - 250, 40, 500, 50), "and reach the shelter safely", missionStyle);
 
         GUI.Label(new Rect(10, 10, 500, 35), "Ahmad Aliff 1221309548", hudStyle);
         GUI.Label(new Rect(10, 45, 500, 35), "Muqrie Rahimi 1211109977", hudStyle);
