@@ -3,7 +3,6 @@ Author: Muqrie Rahimi
 Student ID: 1211109977
 Date Created: 23 May 2026
 */
-
 using UnityEngine;
 using TMPro;
 
