@@ -16,7 +16,7 @@ public class CollectableFish : MonoBehaviour
 
     private void Update()
     {
-        transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
+        transform.Rotate(Vector3.forward * rotateSpeed * Time.deltaTime);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -48,7 +48,7 @@ public class CollectableFish : MonoBehaviour
 
         if (GameManager.Instance != null)
         {
-            GameManager.Instance.AddFish();
+            GameManager.Instance.AddBurger();
         }
 
         gameObject.SetActive(false);

@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Player Stats")]
     [SerializeField] private int playerHealth = 3;
-    [SerializeField] private int fishTarget = 5;
+    [SerializeField] private int burgerTarget = 15;
     [SerializeField] private float timeLimit = 600f;
 
     [Header("References")]
@@ -27,13 +27,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float interactDistance = 2f;
     [SerializeField] private LayerMask interactableLayer;
 
-    private int fishCollected = 0;
+    private int burgerCollected = 0;
     private float currentTime;
     private bool gameEnded = false;
     private string endMessage = "";
 
-    public int FishCollected => fishCollected;
-    public int FishTarget => fishTarget;
+    public int BurgerCollected => burgerCollected;
+    public int BurgerTarget => burgerTarget;
     public int PlayerHealth => playerHealth;
 
     private void Awake()
@@ -123,12 +123,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void AddFish()
+    public void AddBurger()
     {
         if (gameEnded) return;
 
-        fishCollected++;
-        Debug.Log("Fish collected: " + fishCollected + "/" + fishTarget);
+        burgerCollected++;
+        Debug.Log("Burger collected: " + burgerCollected + "/" + burgerTarget);
     }
 
     public void DamagePlayer(int amount)
@@ -145,29 +145,29 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public bool HasEnoughFish()
+    public bool HasEnoughBurger()
     {
-        return fishCollected >= fishTarget;
+        return burgerCollected >= burgerTarget;
     }
 
     public void TryWinGame()
     {
         if (gameEnded) return;
 
-        if (HasEnoughFish())
+        if (HasEnoughBurger())
         {
             WinGame();
         }
         else
         {
-            Debug.Log("Need more fish before reaching shelter!");
+            Debug.Log("Need more burger before reaching shelter!");
         }
     }
 
     private void WinGame()
     {
         gameEnded = true;
-        endMessage = "YOU WIN! The cat reached the rooftop shelter safely.";
+        endMessage = "YOU WIN! The cat reached the shelter safely.";
 
         if (interactionText != null)
         {
@@ -194,9 +194,9 @@ public class GameManager : MonoBehaviour
 
     private void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 300, 30), "Ahamad Alep - ");
-        GUI.Label(new Rect(10, 35, 300, 30), "Muqrie Rahimi - ");
-        GUI.Label(new Rect(10, 65, 300, 30), "Fish: " + fishCollected + "/" + fishTarget);
+        GUI.Label(new Rect(10, 10, 300, 30), "Ahmad Aliff 1221309548 ");
+        GUI.Label(new Rect(10, 35, 300, 30), "Muqrie Rahimi 1211109977 ");
+        GUI.Label(new Rect(10, 65, 300, 30), "Burger: " + burgerCollected + "/" + burgerTarget);
         GUI.Label(new Rect(10, 90, 300, 30), "Health: " + playerHealth);
         GUI.Label(new Rect(10, 115, 300, 30), "Time: " + Mathf.CeilToInt(currentTime));
 
