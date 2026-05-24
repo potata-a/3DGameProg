@@ -1,9 +1,8 @@
 /*
 Author: Muqrie Rahimi
-Student ID: YOUR_STUDENT_ID
+Student ID: 1211109977
 Date Created: 23 May 2026
 */
-
 using UnityEngine;
 
 public class FinishZone : MonoBehaviour
