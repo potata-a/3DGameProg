@@ -77,5 +77,6 @@ public class Dog : MonoBehaviour
         {
             GameManager.Instance.DamagePlayer(damageAmount);
         }
+        Destroy(gameObject, 0.2f);
     }
 }

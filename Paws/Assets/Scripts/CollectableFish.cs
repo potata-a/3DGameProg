@@ -11,11 +11,25 @@ public class CollectableFish : MonoBehaviour
     [SerializeField] private AudioClip collectClip;
     [SerializeField] private float rotateSpeed = 90f;
 
+    [Header("Floating Settings")]
+    [SerializeField] private float floatAmplitude = 0.25f;
+    [SerializeField] private float floatSpeed = 1.5f;
+
     private bool collected = false;
+    private Vector3 startPosition;
+
+    private void Start()
+    {
+        startPosition = transform.position;
+    }
 
     private void Update()
     {
+        // Rotate
         transform.Rotate(Vector3.forward * rotateSpeed * Time.deltaTime);
+
+        // Float up and down
+        transform.position = startPosition + Vector3.up * Mathf.Sin(Time.time * floatSpeed) * floatAmplitude;
     }
 
     private void OnTriggerEnter(Collider other)

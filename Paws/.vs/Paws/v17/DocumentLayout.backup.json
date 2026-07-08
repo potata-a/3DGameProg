@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\unity projects\\3dgameprog\\paws\\assets\\scripts\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\unity projects\\3dgameprog\\paws\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\unity projects\\3dgameprog\\paws\\assets\\scripts\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\collectablefish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\collectablefish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\finishzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\finishzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\animatormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\animatormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\resetbool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\resetbool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,73 +43,90 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAANsAAAAAAAAAAAAUwPIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T15:41:53.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\Car.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Car.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\Car.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Car.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAcwGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T20:55:27.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dog.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\Dog.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dog.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\Dog.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dog.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowE8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T18:56:40.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CollectableFish.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\CollectableFish.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CollectableFish.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\CollectableFish.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CollectableFish.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T20:27:13.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FinishZone.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\FinishZone.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FinishZone.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\FinishZone.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FinishZone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T13:35:37.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PlayerManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\PlayerManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerManager.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\PlayerManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-02T09:44:48.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAcwGEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T15:51:23.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ResetBool.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\ResetBool.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ResetBool.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\ResetBool.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ResetBool.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T16:03:31.506Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InputManager.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\InputManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\InputManager.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\InputManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\InputManager.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwEAAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T13:54:38.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AnimatorManager.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\AnimatorManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AnimatorManager.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\AnimatorManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AnimatorManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T13:48:22.936Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAADwv2oAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-01T13:31:17.533Z"
             }

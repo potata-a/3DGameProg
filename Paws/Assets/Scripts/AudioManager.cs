@@ -34,6 +34,9 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
+        float savedVolume = PlayerPrefs.GetFloat("MasterVolume", 1f);
+        SetMasterVolume(savedVolume);
+
         PlayBGM();
     }
 
