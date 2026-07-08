@@ -1,6 +1,6 @@
 /*
-Author: Ahmad Aliff
-Student ID: 1221309548
+Author: Ahmad Aliff and Muqrie Rahimi
+Student ID: 1221309548 and 1211109977
 Date Created: 23 May 2026
 */
 // Adapted from: https://www.youtube.com/watch?v=gdp-O6z8x28&list=PLD_vBJjpCwJsqpD8QRPNPMfVUpPFLVGg4
@@ -10,6 +10,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // References to other script components attached to player game object (Kitty_001)
     PlayerManager playerManager;
     AnimatorManager animatorManager;
     InputManager inputManager;
@@ -42,8 +43,7 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight = 3f;
     public float gravityIntensify = -15f;
 
-    private void Awake()
-    {
+    private void Awake(){
         playerManager = GetComponent<PlayerManager>();
         animatorManager = GetComponent<AnimatorManager>();
         inputManager = GetComponent<InputManager>();
@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
         HandleRotation();
     }
 
+    // Handles player movement based on camera and input
     private void HandleMovement()
     {
         moveDirection = cameraObject.forward * inputManager.verticalInput;
@@ -89,6 +90,7 @@ public class PlayerController : MonoBehaviour
         playerRigidBody.velocity = movementVelocity;
     }
 
+    // Handles player rotation
     private void HandleRotation()
     {
         Vector3 targetDirection = Vector3.zero;
@@ -113,6 +115,7 @@ public class PlayerController : MonoBehaviour
         transform.rotation = playerRotation;
     }
 
+    // Handles player falling and landing because cannot use unity built in gravity
     private void HandleFallingAndLanding()
     {
         RaycastHit hit;
@@ -159,6 +162,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Handles player jumping by applying vertical velocity and playing jump animation
     public void HandleJumping()
     {
         if (isGrounded)

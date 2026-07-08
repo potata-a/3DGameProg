@@ -5,6 +5,9 @@ Date Created: 23 May 2026
 */
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using System.Collections;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -25,6 +28,10 @@ public class GameManager : MonoBehaviour
     [Header("Raycast Interaction")]
     [SerializeField] private float interactDistance = 2f;
     [SerializeField] private LayerMask interactableLayer;
+
+    [Header("Level Transition")]
+    [SerializeField] private string nextSceneName; // leave empty on the last map
+    [SerializeField] private float winDelay = 2f;
 
     private int burgerCollected = 0;
     private float currentTime;
@@ -224,16 +231,23 @@ public class GameManager : MonoBehaviour
         endMessage = "YOU WIN! The cat reached the shelter safely.";
 
         if (interactionText != null)
-        {
             interactionText.gameObject.SetActive(false);
-        }
 
         Time.timeScale = 0f;
-
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        Debug.Log(endMessage);
+        if (!string.IsNullOrEmpty(nextSceneName))
+            StartCoroutine(LoadNextLevelAfterDelay());
+    }
+
+    private IEnumerator LoadNextLevelAfterDelay()
+    {
+        // WaitForSecondsRealtime because Time.timeScale is 0 right now
+        yield return new WaitForSecondsRealtime(winDelay);
+
+        Time.timeScale = 1f; // IMPORTANT — otherwise the next scene loads still paused
+        SceneManager.LoadScene(nextSceneName);
     }
 
     private void LoseGame(string reason)

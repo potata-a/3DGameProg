@@ -62,22 +62,24 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ResetBool.cs" />
     <Compile Include="Assets\Scripts\CollectableFish.cs" />
+    <Compile Include="Assets\Animals\Animals_FREE\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\Scripts\AnimatorManager.cs" />
+    <Compile Include="Assets\Animals\Animals_FREE\Scripts\MovePlayerInput.cs" />
     <Compile Include="Assets\Scripts\Car.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Dog.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\ResetIsJumping.cs" />
+    <Compile Include="Assets\Animals\Animals_FREE\Scripts\PlayerCamera.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\ithappy\Animals_FREE\Scripts\ThirdPersonCamera.cs" />
+    <Compile Include="Assets\Scripts\MainMenuManager.cs" />
     <Compile Include="Assets\Scripts\CameraManager.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerControls.cs" />
-    <Compile Include="Assets\ithappy\Animals_FREE\Scripts\PlayerCamera.cs" />
-    <Compile Include="Assets\ithappy\Animals_FREE\Scripts\CreatureMover.cs" />
+    <Compile Include="Assets\Scripts\SplashScreenManager.cs" />
+    <Compile Include="Assets\Animals\Animals_FREE\Scripts\CreatureMover.cs" />
     <Compile Include="Assets\Scripts\FinishZone.cs" />
-    <Compile Include="Assets\ithappy\Animals_FREE\Scripts\MovePlayerInput.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -96,8 +98,8 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\POLYGON city pack\Read_me.txt" />
-    <None Include="Assets\ithappy\Animals_FREE\Render_Pipeline_Convert\Documentation.txt" />
+    <None Include="Assets\City1\Read_me.txt" />
+    <None Include="Assets\Animals\Animals_FREE\Render_Pipeline_Convert\Documentation.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
