@@ -6,6 +6,14 @@ Date Created: 23 May 2026
 
 using UnityEngine;
 using TMPro;
+<<<<<<< Updated upstream
+=======
+using UnityEngine.SceneManagement;
+
+using System.Collections.Generic;
+using System.Collections;
+
+>>>>>>> Stashed changes
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Player Stats")]
     [SerializeField] private int playerHealth = 3;
+    [SerializeField] private int maxPlayerHealth = 3;
     [SerializeField] private int burgerTarget = 15;
     [SerializeField] private float timeLimit = 600f;
 
@@ -27,16 +36,32 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float interactDistance = 2f;
     [SerializeField] private LayerMask interactableLayer;
 
+<<<<<<< Updated upstream
+=======
+    [Header("Level Transition")]
+    [SerializeField] private string nextSceneName; // leave empty on the last map
+    [SerializeField] private float winDelay = 2f;
+
+    [Header("Fish Species Collection")]
+    [SerializeField] private int totalFishSpecies = 16;
+
+    [Header("Damage Effect")]
+    [SerializeField] private GameObject damageEffectPrefab;
+
+>>>>>>> Stashed changes
     private int burgerCollected = 0;
     private float currentTime;
     private bool gameEnded = false;
     private bool isPaused = false;
     private string endMessage = "";
+    private readonly HashSet<int> collectedFishSpeciesIds = new HashSet<int>();
 
     public int BurgerCollected => burgerCollected;
     public int BurgerTarget => burgerTarget;
     public int PlayerHealth => playerHealth;
     public bool IsPaused => isPaused;
+    public int FishSpeciesCollected => collectedFishSpeciesIds.Count;
+    public int TotalFishSpecies => totalFishSpecies;
 
     private void Awake()
     {
@@ -157,11 +182,7 @@ public class GameManager : MonoBehaviour
 
         if (hitInteractable)
         {
-            if (interactionText != null)
-            {
-                interactionText.gameObject.SetActive(true);
-                interactionText.text = "Press E to pick up";
-            }
+            ShowInteractionPrompt("Press E to pick up");
 
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -171,11 +192,23 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            if (interactionText != null)
-            {
-                interactionText.gameObject.SetActive(false);
-            }
+            HideInteractionPrompt();
         }
+    }
+
+    public void ShowInteractionPrompt(string message)
+    {
+        if (interactionText == null) return;
+
+        interactionText.gameObject.SetActive(true);
+        interactionText.text = message;
+    }
+
+    public void HideInteractionPrompt()
+    {
+        if (interactionText == null) return;
+
+        interactionText.gameObject.SetActive(false);
     }
 
     public void AddBurger()
@@ -186,6 +219,26 @@ public class GameManager : MonoBehaviour
         Debug.Log("Burger collected: " + burgerCollected + "/" + burgerTarget);
     }
 
+    public bool CollectFishSpecies(int speciesId)
+    {
+        if (gameEnded || isPaused) return false;
+
+        if (!collectedFishSpeciesIds.Add(speciesId)) return false;
+
+        HealPlayer(1);
+
+        Debug.Log("Fish species collected: " + FishSpeciesCollected + "/" + totalFishSpecies + " (species " + speciesId + ")");
+        return true;
+    }
+
+    public void HealPlayer(int amount)
+    {
+        if (gameEnded || isPaused) return;
+
+        playerHealth = Mathf.Min(playerHealth + amount, maxPlayerHealth);
+        Debug.Log("Player healed. HP now: " + playerHealth + "/" + maxPlayerHealth);
+    }
+
     public void DamagePlayer(int amount)
     {
         if (gameEnded || isPaused) return;
@@ -193,11 +246,28 @@ public class GameManager : MonoBehaviour
         playerHealth -= amount;
         Debug.Log("Player damaged. HP left: " + playerHealth);
 
+        SpawnDamageEffect();
+
         if (playerHealth <= 0)
         {
             playerHealth = 0;
             LoseGame("The cat was hit too many times!");
         }
+    }
+
+    private void SpawnDamageEffect()
+    {
+        if (damageEffectPrefab == null || player == null) return;
+
+        GameObject fx = Instantiate(damageEffectPrefab, player.position + Vector3.up * 0.5f, Quaternion.identity);
+        ParticleSystem ps = fx.GetComponent<ParticleSystem>();
+
+        if (ps != null)
+        {
+            ps.Play();
+        }
+
+        Destroy(fx, 2f);
     }
 
     public bool HasEnoughBurger()
@@ -234,7 +304,21 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
+<<<<<<< Updated upstream
         Debug.Log(endMessage);
+=======
+        if (!string.IsNullOrEmpty(nextSceneName))
+            StartCoroutine(LoadNextLevelAfterDelay());
+    }
+
+    private IEnumerator LoadNextLevelAfterDelay()
+    {
+        // WaitForSecondsRealtime because Time.timeScale is 0 right now
+        yield return new WaitForSecondsRealtime(winDelay);
+
+        Time.timeScale = 1f; // IMPORTANT � otherwise the next scene loads still paused
+        SceneManager.LoadScene(nextSceneName);
+>>>>>>> Stashed changes
     }
 
     private void LoseGame(string reason)
@@ -296,9 +380,11 @@ public class GameManager : MonoBehaviour
 
         GUI.Label(new Rect(10, 10, 500, 35), "Ahmad Aliff 1221309548", hudStyle);
         GUI.Label(new Rect(10, 45, 500, 35), "Muqrie Rahimi 1211109977", hudStyle);
+        
         GUI.Label(new Rect(10, 80, 500, 35), "Burger: " + burgerCollected + "/" + burgerTarget, hudStyle);
-        GUI.Label(new Rect(10, 115, 500, 35), "Health: " + playerHealth, hudStyle);
-        GUI.Label(new Rect(10, 150, 500, 35), "Time: " + Mathf.CeilToInt(currentTime), hudStyle);
+        GUI.Label(new Rect(10, 115, 500, 35), "Fish Species: " + FishSpeciesCollected + "/" + totalFishSpecies, hudStyle);
+        GUI.Label(new Rect(10, 150, 500, 35), "Health: " + playerHealth, hudStyle);
+        GUI.Label(new Rect(10, 185, 500, 35), "Time: " + Mathf.CeilToInt(currentTime), hudStyle);
 
         string controls =
             "CONTROLS\n" +

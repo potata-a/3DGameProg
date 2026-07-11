@@ -1,24 +1,25 @@
 /*
 Author: Muqrie Rahimi
-Student ID: YOUR_STUDENT_ID
-Date Created: 23 May 2026
+Student ID: 1211109977
 */
-
 using UnityEngine;
 
-public class CollectableFish : MonoBehaviour
+public class FishSpeciesCollectible : MonoBehaviour
 {
+    [Header("Species Settings")]
+    [SerializeField] private int speciesId;
+    [SerializeField] private string speciesName;
+
     [Header("Collectable Settings")]
     [SerializeField] private AudioClip collectClip;
     [SerializeField] private GameObject collectEffectPrefab;
     [SerializeField] private float rotateSpeed = 90f;
 
-    private bool collected = false;
-<<<<<<< Updated upstream
+    [Header("Floating Settings")]
+    [SerializeField] private float floatAmplitude = 0.25f;
+    [SerializeField] private float floatSpeed = 1.5f;
 
-    private void Update()
-    {
-=======
+    private bool collected = false;
     private bool playerInRange = false;
     private Vector3 startPosition;
 
@@ -31,9 +32,8 @@ public class CollectableFish : MonoBehaviour
     {
         if (collected) return;
 
-        // Rotate
->>>>>>> Stashed changes
         transform.Rotate(Vector3.forward * rotateSpeed * Time.deltaTime);
+        transform.position = startPosition + Vector3.up * Mathf.Sin(Time.time * floatSpeed) * floatAmplitude;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -54,12 +54,11 @@ public class CollectableFish : MonoBehaviour
     public void Interact()
     {
         if (collected || !playerInRange) return;
+        if (GameManager.Instance == null) return;
 
-        CollectFish();
-    }
+        bool isNewSpecies = GameManager.Instance.CollectFishSpecies(speciesId);
+        if (!isNewSpecies) return;
 
-    private void CollectFish()
-    {
         collected = true;
         playerInRange = false;
 
@@ -68,11 +67,6 @@ public class CollectableFish : MonoBehaviour
         if (AudioManager.Instance != null)
         {
             AudioManager.Instance.PlaySFX(collectClip);
-        }
-
-        if (GameManager.Instance != null)
-        {
-            GameManager.Instance.AddBurger();
         }
 
         gameObject.SetActive(false);
