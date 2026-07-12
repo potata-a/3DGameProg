@@ -74,7 +74,7 @@ MonoBehaviour:
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
-  m_Stats: 0
+  m_Stats: 1
   m_SelectedSizes: 01000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
@@ -239,7 +239,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
+      scrollPos: {x: 0, y: 1648}
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 5ef1fdff66f1fdff6a26feff6427feff402cfeff8e2cfefff02cfeff6843feffac77fefff277feff5a78feff647dfeff7880ffff6c82ffffe284ffffea8cffff788effff7292ffff9a97ffff2ed6ffffdaebffffd2f0ffff0af1ffff54f1ffff8ef1ffffe2f1ffff1af2ffff64f2ffffe4f2fffffcfaffff9092000078930000ac9e0000f09e0000029f00000a8d0100
@@ -1248,8 +1248,6 @@ MonoBehaviour:
   m_BreadCrumbs:
   - m_Target: {fileID: -9113812753629500690, guid: 82f4bac74a5a7bc49b64386c507e209b, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
-  - m_Target: {fileID: 4771746443109668396, guid: 82f4bac74a5a7bc49b64386c507e209b, type: 2}
-    m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
   blendTreeGraph: {fileID: 0}
@@ -1335,6 +1333,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+    - Assets/Animations
     - Assets/Prefabs/UI
     m_Globs: []
     m_OriginalText: 
@@ -1343,6 +1342,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+  - Assets/Animations
   - Assets/Prefabs/UI
   m_LastFoldersGridSize: -1
   m_LastProjectPath: G:\Git\3DGameProg\Paws

@@ -7,7 +7,11 @@
       "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\unity projects\\3dgameprog\\paws\\assets\\scripts\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\unity projects\\3dgameprog\\paws\\assets\\scripts\\splashscreenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\splashscreenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -38,8 +42,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SplashScreenManager.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\SplashScreenManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SplashScreenManager.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\SplashScreenManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SplashScreenManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T15:49:20.017Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -48,14 +65,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAANsAAAAAAAAAAAAUwPIAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-08T15:41:53.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Car.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\Car.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Car.cs",
@@ -63,12 +80,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Car.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAAAcwGsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T20:55:27.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T20:55:27.101Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Dog.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\Dog.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dog.cs",
@@ -76,12 +92,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Dog.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAowE8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T18:56:40.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T18:56:40.835Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CollectableFish.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\CollectableFish.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CollectableFish.cs",
@@ -89,12 +104,11 @@
               "RelativeToolTip": "Assets\\Scripts\\CollectableFish.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T20:27:13.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T20:27:13.243Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "FinishZone.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\FinishZone.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FinishZone.cs",
@@ -102,12 +116,11 @@
               "RelativeToolTip": "Assets\\Scripts\\FinishZone.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T13:35:37.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-24T13:35:37.278Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PlayerManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\PlayerManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerManager.cs",
@@ -115,12 +128,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T09:44:48.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T09:44:48.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
