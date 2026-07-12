@@ -10,6 +10,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.Rendering;
 
 
 // Core game loop: burger objective, health, timer, pause, and raycast interaction, plus
@@ -40,6 +41,9 @@ public class GameManager : MonoBehaviour
 
     [Header("Level Transition")]
     [SerializeField] private string nextSceneName; // leave empty on the last map
+
+    [Header("Pause UI")]
+    [SerializeField] private GameObject pausePanel;
 
     private int burgerCollected = 0;
     private float currentTime;
@@ -76,6 +80,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        DynamicGI.UpdateEnvironment();
         Time.timeScale = 1f;
         currentTime = timeLimit;
 
@@ -134,16 +139,26 @@ public class GameManager : MonoBehaviour
             interactionText.gameObject.SetActive(false);
         }
 
+        if (pausePanel != null)
+        {
+            pausePanel.SetActive(true);
+        }
+
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
         Debug.Log("Game Paused");
     }
 
-    private void ResumeGame()
+    public void ResumeGame()
     {
         isPaused = false;
         Time.timeScale = 1f;
+
+        if (pausePanel != null)
+        {
+            pausePanel.SetActive(false);
+        }
 
         LockCursor();
 

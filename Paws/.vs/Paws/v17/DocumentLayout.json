@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\unity projects\\3dgameprog\\paws\\assets\\scripts\\pausemenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausemenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\unity projects\\3dgameprog\\paws\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\finishzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\finishzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\collectablefish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,28 +35,20 @@
       "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\finishzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\finishzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\unity projects\\3dgameprog\\paws\\assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\unity projects\\3dgameprog\\paws\\assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\unity projects\\3dgameprog\\paws\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\splashscreenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\splashscreenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\assets\\scripts\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3985E7D1-0EDE-6F90-FB0F-324EF3C63B24}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,30 +58,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "PauseMenuManager.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\PauseMenuManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PauseMenuManager.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\PauseMenuManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PauseMenuManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T13:30:11.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InputManager.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\InputManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InputManager.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\InputManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InputManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T12:57:38.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "AudioManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\AudioManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\AudioManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\AudioManager.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwEAAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T18:04:09.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-08T18:04:09.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "MainMenuManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\MainMenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenuManager.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\MainMenuManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\MainMenuManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-08T17:54:51.898Z",
               "EditorCaption": ""
@@ -86,60 +119,58 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\SplashScreenManager.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\SplashScreenManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\SplashScreenManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-08T15:49:20.017Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAQwC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-08T15:41:53.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "Car.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\Car.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Car.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\Car.cs",
               "RelativeToolTip": "Assets\\Scripts\\Car.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowGsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T20:55:27.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T20:55:27.101Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Dog.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\Dog.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dog.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\Dog.cs",
               "RelativeToolTip": "Assets\\Scripts\\Dog.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAowE8AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-23T18:56:40.835Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "CollectableFish.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\CollectableFish.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CollectableFish.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\CollectableFish.cs",
               "RelativeToolTip": "Assets\\Scripts\\CollectableFish.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T20:27:13.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T20:27:13.243Z"
             },
             {
               "$type": "Document",
@@ -151,12 +182,11 @@
               "RelativeToolTip": "Assets\\Scripts\\FinishZone.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T13:35:37.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-24T13:35:37.278Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "PlayerManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\PlayerManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerManager.cs",
@@ -164,21 +194,19 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T09:44:48.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T09:44:48.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Unity Projects\\3DGameProg\\Paws\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAFwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T13:31:17.533Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-01T13:31:17.533Z"
             }
           ]
         }

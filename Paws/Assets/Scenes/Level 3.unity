@@ -10424,8 +10424,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carPrefab: {fileID: 7053011968414001406, guid: 0955edbefdc4cfd4b9a2791b8cab062f, type: 3}
-  spawnPoint: {fileID: 1582777131}
-  endPoint: {fileID: 0}
+  spawnPoint: {fileID: 822654572}
+  endPoint: {fileID: 1582777131}
   carSpeed: 15
   spawnCooldown: 2
   damageAmount: 1
@@ -32209,6 +32209,10 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 1122232359}
+    - target: {fileID: 3504581445036821355, guid: 449d825a28abe694c8cbb4e60f7ad5c1, type: 3}
+      propertyPath: nextSceneName
+      value: Splash Screen
+      objectReference: {fileID: 0}
     - target: {fileID: 3504581445036821355, guid: 449d825a28abe694c8cbb4e60f7ad5c1, type: 3}
       propertyPath: interactionText
       value: 

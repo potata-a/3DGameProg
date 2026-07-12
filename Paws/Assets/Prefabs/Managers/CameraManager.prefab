@@ -102,6 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5387809509435352217}
   - component: {fileID: 7510579293849025169}
+  - component: {fileID: 1108905963242307035}
   m_Layer: 0
   m_Name: CameraManager
   m_TagString: Untagged
@@ -144,6 +145,22 @@ MonoBehaviour:
   cameraPivotSpeed: 0.1
   lookAngle: 0
   pivotAngle: 0
+--- !u!114 &1108905963242307035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5344271184766867637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecf7cc716a5a85f4f8ed7a1105dcdf40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  introStartPoint: {fileID: 0}
+  introEndPoint: {fileID: 0}
+  introDuration: 5
+  playerManager: {fileID: 0}
 --- !u!1 &6026581607849244555
 GameObject:
   m_ObjectHideFlags: 0

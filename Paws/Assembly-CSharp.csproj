@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\FishSlotUI.cs" />
     <Compile Include="Assets\Animals\Animals_FREE\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\Scripts\SaveManager.cs" />
+    <Compile Include="Assets\Scripts\LevelIntroCamera.cs" />
     <Compile Include="Assets\Scripts\AnimatorManager.cs" />
     <Compile Include="Assets\Animals\Animals_FREE\Scripts\MovePlayerInput.cs" />
     <Compile Include="Assets\Scripts\Car.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="Assets\Scripts\CollectableBurger.cs" />
     <Compile Include="Assets\Scripts\CameraManager.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\PauseMenuManager.cs" />
     <Compile Include="Assets\Scripts\Billboard.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerControls.cs" />
