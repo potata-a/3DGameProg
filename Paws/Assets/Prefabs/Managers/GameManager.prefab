@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7407199775313013475}
   - component: {fileID: 3504581445036821355}
+  - component: {fileID: 8465722278470088635}
+  - component: {fileID: 1385359823523747743}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -45,8 +47,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 3
+  maxHealth: 3
   burgerTarget: 15
   timeLimit: 600
+  eatFishKey: 102
   player: {fileID: 0}
   mainCamera: {fileID: 0}
   interactionText: {fileID: 0}
@@ -54,3 +58,37 @@ MonoBehaviour:
   interactableLayer:
     serializedVersion: 2
     m_Bits: 64
+  nextSceneName: 
+  winDelay: 2
+--- !u!114 &8465722278470088635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3552033967349175546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e03f6c04cde0f8a469ab4032c20f79dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageEffect: {fileID: 3462984031903679246, guid: 89c4bd60ee5d21d46872c84ffdcfb817, type: 3}
+  pickupEffect: {fileID: 8848963500315877820, guid: a6d400659dbe1ba49964170e0939cab4, type: 3}
+  healEffect: {fileID: 7725125531358635436, guid: b2da0ec795d395f439181daba85f3fd1, type: 3}
+--- !u!114 &1385359823523747743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3552033967349175546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbc32008beecc1d43ba30f1ca69158f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsPerFish: 200
+  pointsPerBurger: 50
+  damagePenalty: 100
+  timeBonusPerSecond: 5
+  allFishBonus: 2000

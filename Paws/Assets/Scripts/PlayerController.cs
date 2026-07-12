@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     PlayerManager playerManager;
     AnimatorManager animatorManager;
     InputManager inputManager;
+    PlayerHitReaction hitReaction;
 
     Vector3 moveDirection;
     Transform cameraObject;
@@ -47,6 +48,7 @@ public class PlayerController : MonoBehaviour
         playerManager = GetComponent<PlayerManager>();
         animatorManager = GetComponent<AnimatorManager>();
         inputManager = GetComponent<InputManager>();
+        hitReaction = GetComponent<PlayerHitReaction>();
         playerRigidBody = GetComponent<Rigidbody>();
         cameraObject = Camera.main.transform;
     }
@@ -54,6 +56,10 @@ public class PlayerController : MonoBehaviour
     public void HandleAllMovement()
     {
         HandleFallingAndLanding();
+
+        // While staggered from a hit, let physics carry the knockback (no input control).
+        if (hitReaction != null && hitReaction.IsStaggered)
+            return;
 
         if (playerManager.isInteracting && !isJumping && !isGrounded)
             return;
@@ -84,6 +90,15 @@ public class PlayerController : MonoBehaviour
         }
 
         Vector3 movementVelocity = moveDirection;
+
+        // Layer the decaying hit knockback on top of input so the fling still shows
+        // even while a movement key is held.
+        if (hitReaction != null)
+        {
+            Vector3 kb = hitReaction.CurrentKnockback;
+            movementVelocity.x += kb.x;
+            movementVelocity.z += kb.z;
+        }
 
         movementVelocity.y = playerRigidBody.velocity.y;
 
@@ -165,6 +180,9 @@ public class PlayerController : MonoBehaviour
     // Handles player jumping by applying vertical velocity and playing jump animation
     public void HandleJumping()
     {
+        if (hitReaction != null && hitReaction.IsStaggered)
+            return;
+
         if (isGrounded)
         {
             isJumping = true;

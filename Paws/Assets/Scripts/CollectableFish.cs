@@ -2,11 +2,20 @@
 Author: Muqrie Rahimi
 Student ID: 1211109977
 Date Created: 23 May 2026
+Updated: 10 July 2026 - repurposed from the burger counter to add the fish to the player's inventory instead.
+Updated: 11 July 2026 - plays the shared pickup particle effect on collect.
 */
 using UnityEngine;
 
+// Fish pickup. Uses the same raycast + E interaction as the burger, but instead of
+// counting toward the win condition it is added to the player's fish inventory
+// (a carried fish that can later be eaten to heal, plus a permanent collection entry).
 public class CollectableFish : MonoBehaviour
 {
+    [Header("Fish Data")]
+    [Tooltip("Which of the 16 fish this pickup represents.")]
+    [SerializeField] private FishData fishData;
+
     [Header("Collectable Settings")]
     [SerializeField] private AudioClip collectClip;
     [SerializeField] private float rotateSpeed = 90f;
@@ -25,29 +34,9 @@ public class CollectableFish : MonoBehaviour
 
     private void Update()
     {
-        // Rotate
+        // Spin and gently bob so the pickup reads as collectable.
         transform.Rotate(Vector3.forward * rotateSpeed * Time.deltaTime);
-
-        // Float up and down
         transform.position = startPosition + Vector3.up * Mathf.Sin(Time.time * floatSpeed) * floatAmplitude;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (collected) return;
-
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("Player is near collectable. Press E to pick up.");
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("Player left collectable area.");
-        }
     }
 
     private void CollectFish()
@@ -59,14 +48,20 @@ public class CollectableFish : MonoBehaviour
             AudioManager.Instance.PlaySFX(collectClip);
         }
 
-        if (GameManager.Instance != null)
+        if (EffectsManager.Instance != null)
         {
-            GameManager.Instance.AddBurger();
+            EffectsManager.Instance.PlayPickup(transform.position);
+        }
+
+        if (PlayerInventory.Instance != null)
+        {
+            PlayerInventory.Instance.CollectFish(fishData);
         }
 
         gameObject.SetActive(false);
     }
 
+    // Called by GameManager's raycast interaction (SendMessage "Interact").
     public void Interact()
     {
         if (!collected)
