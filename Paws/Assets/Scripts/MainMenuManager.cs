@@ -1,3 +1,8 @@
+/*
+Author: Ahmad Aliff
+Student ID: 1221309548
+Date Created: 8 July 2026
+*/
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
