@@ -145,7 +145,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1214926747996270}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6eb0b22b853750446a68d6bdb4046c11, type: 3}
+  m_Script: {fileID: 11500000, guid: 7bd0e23eab6e17048ba9effc1618f675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   collectClip: {fileID: 8300000, guid: 7cfa5da020ee5224e84a8c5822989270, type: 3}

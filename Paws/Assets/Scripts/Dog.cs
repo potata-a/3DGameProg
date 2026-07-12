@@ -2,9 +2,12 @@
 Author: Muqrie Rahimi
 Student ID: 1211109977
 Date Created: 23 May 2026
+Updated: 12 July 2026 - added knockback on hit and removed the self-destruct so the dog keeps patrolling.
 */
 using UnityEngine;
 
+// Patrols between waypoints; on contact it damages and knocks the cat back, and
+// re-damages on a cooldown while the cat stays in contact.
 public class Dog : MonoBehaviour
 {
     [Header("Patrol Settings")]
@@ -15,6 +18,7 @@ public class Dog : MonoBehaviour
     [Header("Damage Settings")]
     [SerializeField] private int damageAmount = 1;
     [SerializeField] private float damageCooldown = 1.5f;
+    [SerializeField] private float knockbackForce = 4f;
     [SerializeField] private AudioClip dogHitClip;
 
     private int currentWaypointIndex = 0;
@@ -75,8 +79,7 @@ public class Dog : MonoBehaviour
 
         if (GameManager.Instance != null)
         {
-            GameManager.Instance.DamagePlayer(damageAmount);
+            GameManager.Instance.DamagePlayer(damageAmount, transform.forward, knockbackForce);
         }
-        Destroy(gameObject, 0.2f);
     }
 }
