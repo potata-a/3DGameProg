@@ -2,9 +2,12 @@
 Author: Muqrie Rahimi
 Student ID: 1211109977
 Date Created: 23 May 2026
+Updated: 12 July 2026 - on hit, flings the cat along the car's travel direction (knockback) with brief invulnerability.
 */
 using UnityEngine;
 
+// Trigger volume that spawns a car which drives across the road; on collision the car
+// damages and knocks the cat back, then despawns.
 public class Car : MonoBehaviour
 {
     [Header("Spawn Settings")]
@@ -16,6 +19,7 @@ public class Car : MonoBehaviour
 
     [Header("Damage Settings")]
     [SerializeField] private int damageAmount = 1;
+    [SerializeField] private float knockbackForce = 9f;
     [SerializeField] private AudioClip carHitClip;
 
     private float nextSpawnTime = 0f;
@@ -53,7 +57,7 @@ public class Car : MonoBehaviour
             movingCar = spawnedCar.AddComponent<MovingCar>();
         }
 
-        movingCar.Setup(endPoint, carSpeed, damageAmount, carHitClip);
+        movingCar.Setup(endPoint, carSpeed, damageAmount, carHitClip, knockbackForce);
     }
 }
 
@@ -63,14 +67,16 @@ class MovingCar : MonoBehaviour
     private float speed;
     private int damageAmount;
     private AudioClip hitClip;
+    private float knockbackForce;
     private bool hasHitPlayer = false;
 
-    public void Setup(Transform targetEndPoint, float moveSpeed, int damage, AudioClip clip)
+    public void Setup(Transform targetEndPoint, float moveSpeed, int damage, AudioClip clip, float knockback)
     {
         endPoint = targetEndPoint;
         speed = moveSpeed;
         damageAmount = damage;
         hitClip = clip;
+        knockbackForce = knockback;
     }
 
     private void Update()
@@ -103,7 +109,11 @@ class MovingCar : MonoBehaviour
 
         if (GameManager.Instance != null)
         {
-            GameManager.Instance.DamagePlayer(damageAmount);
+            // Fling the cat along the car's travel direction (toward its endpoint).
+            Vector3 travelDir = endPoint != null
+                ? (endPoint.position - transform.position)
+                : transform.forward;
+            GameManager.Instance.DamagePlayer(damageAmount, travelDir, knockbackForce);
         }
 
         Destroy(gameObject, 0.2f);

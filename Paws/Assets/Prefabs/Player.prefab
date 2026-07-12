@@ -202,6 +202,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7255141032004407990}
+  - component: {fileID: 1589109105039636749}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -226,6 +227,35 @@ Transform:
   - {fileID: 2264315081026822730}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1589109105039636749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911340665906128714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162012ba254ce22438955313b7bab4b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allFishTypes:
+  - {fileID: 11400000, guid: 39d0a0230549fec488a09da90d87a1b3, type: 2}
+  - {fileID: 11400000, guid: 9a9252896b856f043b049ce1e0b4e716, type: 2}
+  - {fileID: 11400000, guid: 87ce2bc291b9b774ca0a9a53f0261ffa, type: 2}
+  - {fileID: 11400000, guid: 33acd6aaac5b6214998fc6815ac79038, type: 2}
+  - {fileID: 11400000, guid: e9edb9ad1a9886f479442a1809177c57, type: 2}
+  - {fileID: 11400000, guid: b4ff9e8caf8ed37439f169c79a15ba57, type: 2}
+  - {fileID: 11400000, guid: 237161210655cfc44a6130fa1fffe73f, type: 2}
+  - {fileID: 11400000, guid: 6c0e985755091344a8a205dcbb1652c1, type: 2}
+  - {fileID: 11400000, guid: 15dafded099630f42acf9be5a28f7d63, type: 2}
+  - {fileID: 11400000, guid: 6d1332b00f3cda54bbee6b96918c1364, type: 2}
+  - {fileID: 11400000, guid: 3ef81dc85b9cbea45ba796d05dbec395, type: 2}
+  - {fileID: 11400000, guid: 4ee882dcc11124d4fa166ec7cd7b4ee6, type: 2}
+  - {fileID: 11400000, guid: d10bce295fa8a0c418d3631d10a2ef63, type: 2}
+  - {fileID: 11400000, guid: e1436c6639f416647a3f1deb6ca6e691, type: 2}
+  - {fileID: 11400000, guid: 120a89a83d8ce27449dccdebd4dde942, type: 2}
+  - {fileID: 11400000, guid: fd5ab83cdf3b3a648823e73589eef360, type: 2}
 --- !u!1 &2174933367412956580
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,6 +931,7 @@ GameObject:
   - component: {fileID: 898336645089639784}
   - component: {fileID: 170095084356058581}
   - component: {fileID: 5265207472443654651}
+  - component: {fileID: 8434427908847510995}
   m_Layer: 0
   m_Name: Kitty_001
   m_TagString: Player
@@ -1071,6 +1102,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8434427908847510995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5073091816428002146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36142f73b0c21ef4094b1dddf1a59498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upwardForce: 3
+  staggerDuration: 0.12
+  invulnerabilityDuration: 1
+  flashInterval: 0.1
 --- !u!1 &5169361245138237998
 GameObject:
   m_ObjectHideFlags: 0
